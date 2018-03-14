@@ -1,4 +1,5 @@
 const express = require('express')
 const app = express()
-app.get('/', (req, res) => res.send('Hello World! Paweł Marcinek'))
+var counter = 0
+app.get('/', (req, res) => res.send('Hello World! This Michal`s version. Number of visits is ' + ++counter))
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
